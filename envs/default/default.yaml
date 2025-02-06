@@ -1,6 +1,6 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
-metadata: 
+metadata:
   name: default
   namespace: argocd
 spec:
@@ -12,4 +12,11 @@ spec:
     directory:
       recurse: true
     path: envs/default
+    targetRevesion: main
     repoURL: https://github.dev/senpaii1/argocd
+  syncPocily:
+    automated: true
+    selfHeal: true
+  syncOptions:
+    - CreateNamespace=true
+    
