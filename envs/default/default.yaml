@@ -13,10 +13,9 @@ spec:
       recurse: true
     path: envs/default
     targetRevesion: main
-    repoURL: https://github.dev/senpaii1/argocd
+    repoURL: https://github.com/senpaii1/argocd
   syncPocily:
     automated: true
     selfHeal: true
   syncOptions:
     - CreateNamespace=true
-    
