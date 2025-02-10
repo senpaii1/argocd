@@ -15,7 +15,8 @@ spec:
     targetRevision: main
     repoURL: https://github.com/senpaii1/argocd
   syncPolicy:
-    automated: true
-    selfHeal: true
+    automated:
+      prune: true
+      selfHeal: true
   syncOptions:
     - CreateNamespace=true
