@@ -12,9 +12,9 @@ spec:
     directory:
       recurse: true
     path: envs/default
-    targetRevesion: main
+    targetRevision: main
     repoURL: https://github.com/senpaii1/argocd
-  syncPocily:
+  syncPolicy:
     automated: true
     selfHeal: true
   syncOptions:
